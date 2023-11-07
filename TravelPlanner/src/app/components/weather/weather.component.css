@@ -1,0 +1,32 @@
+.w-day{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+th{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: smaller;
+    color:green;
+}
+
+td{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size:medium;
+}
+
+.w-date{
+    font-size: smaller;
+    font-weight: bold;
+    color: brown;
+}
+
+
+.temp-title{
+    font-size: smaller;
+    font-weight: bold;
+    color:blue;
+
+}
+
+
