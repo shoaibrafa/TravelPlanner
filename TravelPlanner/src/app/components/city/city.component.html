@@ -1,22 +1,20 @@
 <app-header></app-header>
 
-
-<div class="row">
-  <div class="col-3"></div>
-  <div class="col-6 mt-3">
-  
+<div class="container">
+  <div class="row">
+    <div class="col-lg-2 col-md-4 col-sm-12"></div>
+    <div class="col-lg-8 col-md-8 col-sm-12 mt-3">
 
       <div class="row bg-light">
-        <div class="col-sm-8">
+        <div class="col-12">
           <div class="dropdown" (click)="toggleDropdown()">
-            <button class="btn dropdown-toggle" type="button">{{ selectedCity ? selectedCity : 'Select Your Travel Distination' }}</button>
+            <button class="btn dropdown-toggle" type="button">{{ selectedCity ? selectedCity : 'Select Your Travel Destination' }}</button>
             <div class="dropdown-menu" [ngClass]="{ 'show': isDropdownOpen }">
               <a class="dropdown-item" *ngFor="let city of citynameslist" (click)="onSelectCity(city)"> {{ city }}</a>
             </div>
           </div>
         </div>
       </div>
-      
 
       <div class="card mt-2" style="width: 100%;" *ngIf="city_info">
         <img class="card-img-top" [src]="city_image" alt="Card image cap">
@@ -26,10 +24,9 @@
         </div>
       </div>
 
-
       <app-weather [city]="currentCity"></app-weather>
 
-
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-12"></div>
   </div>
-  <div class="col-3"></div>
 </div>
